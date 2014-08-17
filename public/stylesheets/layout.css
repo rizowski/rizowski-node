@@ -1,0 +1,95 @@
+/*
+<div class="section group">
+	<div class="col span1">
+	   1 of 4
+	</div>
+	<div class="col span1">
+	   1 of 4
+	</div>
+	<div class="col span1">
+	   1 of 4
+	</div>
+	<div class="col span1">
+	   1 of 4
+	</div>
+</div>
+
+*/
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.0%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+
+/*  GRID OF FOUR  */
+.span4 {
+	width: 100%;
+}
+.span3 {
+	width: 74.75%;
+}
+.span2 {
+	width: 49.5%;
+}
+.span1 {
+	width: 24.25%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span4 {
+		width: 100%;
+	}
+	.span3 {
+		width: 100%;
+	}
+	.span2 {
+		width: 100%;
+	}
+	.span1 {
+		width: 100%;
+	}
+}
+
+/*
+// BigSlide css
+.panel {
+    position: fixed;
+    left: -15.625em;
+    width: 15.625em;
+}
+.wrap {
+    position: relative;
+}*/
