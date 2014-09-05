@@ -1,5 +1,5 @@
 body {
-  background: black;
+/*  background: black;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -23,7 +23,9 @@ h6 { font-size: .75em; }
   color: white;
   padding-right: 10px;
 }
+
 nav {
+/*  height:40px;*/
   background: black;
 }
 
