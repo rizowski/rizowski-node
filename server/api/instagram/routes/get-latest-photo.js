@@ -2,7 +2,7 @@ import client from '../clients/instagram-client';
 
 
 export default {
-  path: '/ig/latest-photo',
+  path: '/instagram/latest-photo',
   method: 'GET',
   handler: (req, res) =>{
     let result = client.getPhotos();

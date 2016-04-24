@@ -9,7 +9,7 @@ export default {
     reporters: [{
       reporter,
       events: {
-        ops: '*',
+        // ops: '*',
         response: '*',
         log: '*',
         error: '*',
