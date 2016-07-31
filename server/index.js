@@ -3,7 +3,10 @@ import registerPlugins from './plugins';
 
 const server = new Server();
 
-server.connection({ port: process.env.PORT || 3000 });
+server.connection({ 
+  host: process.env.IP,
+  port: process.env.PORT || 3000 
+});
 
 export default registerPlugins(server)
   .then(server => {
