@@ -3,9 +3,9 @@ import registerPlugins from './plugins';
 
 const server = new Server();
 
-server.connection({ 
+server.connection({
   host: process.env.IP,
-  port: process.env.PORT || 3000 
+  port: process.env.PORT || 3000
 });
 
 export default registerPlugins(server)
